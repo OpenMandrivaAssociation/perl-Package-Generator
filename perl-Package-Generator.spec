@@ -1,6 +1,6 @@
 %define module   Package-Generator
-%define version    0.102
-%define release    %mkrel 2
+%define version    0.103
+%define release    %mkrel 1
 
 Name:       perl-%{module}
 Version:    %{version}
