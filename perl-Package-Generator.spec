@@ -1,15 +1,14 @@
 %define module   Package-Generator
-%define version    0.103
-%define release    %mkrel 1
+%define upstream_version    1.105
 
 Name:		perl-%{module}
-Version:	0.103
-Release:	2
+Version:	%perl_convert_version %{upstream_version}
+Release:	1
 Summary:	Pseudo-garbage-collection for packages
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/Package/%{module}-%{version}.tar.gz
+Source:		http://www.cpan.org/modules/by-module/Package/Package-Generator-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Scalar::Util)
@@ -22,7 +21,7 @@ delete a given package. This lets you approximate lexically scoped
 packages.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{module}-%{upstream_version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -57,3 +56,4 @@ make test
 
 * Sat May 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.102-1mdv2009.0
 - first mdv release
+
