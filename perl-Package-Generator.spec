@@ -1,5 +1,5 @@
 %define module   Package-Generator
-%define upstream_version    1.105
+%define upstream_version 1.106
 
 Name:		perl-%{module}
 Version:	%perl_convert_version %{upstream_version}
@@ -56,4 +56,5 @@ make test
 
 * Sat May 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.102-1mdv2009.0
 - first mdv release
+
 
