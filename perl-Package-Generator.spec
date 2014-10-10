@@ -3,7 +3,7 @@
 
 Name:		perl-%{module}
 Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Release:	2
 Summary:	Pseudo-garbage-collection for packages
 License:	GPL or Artistic
 Group:		Development/Perl
