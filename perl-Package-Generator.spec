@@ -7,7 +7,7 @@ Release:	3
 Summary:	Pseudo-garbage-collection for packages
 License:	GPL or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		https://search.cpan.org/dist/%{module}
 Source:		http://www.cpan.org/modules/by-module/Package/Package-Generator-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
