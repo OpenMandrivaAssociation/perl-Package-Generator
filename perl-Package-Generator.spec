@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{module}
 Source:		http://www.cpan.org/modules/by-module/Package/Package-Generator-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Scalar::Util)
 BuildRequires:	perl(Test::More)
